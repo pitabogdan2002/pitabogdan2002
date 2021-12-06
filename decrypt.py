@@ -8,7 +8,7 @@ if (len(sys.argv[3])<10 or len(sys.argv[3])>15) or (sys.argv[3].isalnum()==0):
 	exit()
 f = open(str(sys.argv[1]), "rb")
 g = open(str(sys.argv[2]), "w")
-password="sys.argv[2]".encode("utf-8")
+password="sys.argv[3]".encode("utf-8")
 key=base64.b64encode(password)
 data=f.read()
 out=""
