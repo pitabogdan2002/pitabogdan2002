@@ -9,8 +9,9 @@ pentru decrypt: python3 decrypt.py <nume fisier output> <nume fisier recuperat> 
 
 
 PENTRU CRACK
-cu input.txt: rulam in terminal  python3 hack.py <nume fisier output> <nume fisier input.txt> 
+cu input.txt: rulam in terminal  python3 crack.py <nume fisier output> <nume fisier input.txt> 
 fara input.txt: rulam in terminal  python3 hack2.py <nume fisier output> 
+in acest caz am incercat sa luam primele 10-15 caractere din output si sa verficam daca vreun caracter din cele posibile in parola xor-at cu fiecare din output va duce la obtinerea unui caracter posibil din cele din input.txt si daca da, atunci il adaugam la un sir creat de noi. Daca la final acest sir avea aceeasi lungime cu lungimea corespunzatoare 10-15 atunci acesta era cheia.
 
 Documentație/surse de inspirație:
 https://www.youtube.com/watch?v=jMZoZ1F7cZ8
